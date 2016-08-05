@@ -1,0 +1,2895 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<questionnaire id="463723">
+  <title>IT-Report - Test Jens</title>
+  <investigator />
+  <dataCollector />
+  <section id="146">
+    <sectionInfo>
+      <position>title</position>
+      <text>Allgemeine Angaben</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Welche Bezeichnung beschreibt Ihre Position in der Einrichtung am besten?</text>
+      <response varName="A1">
+        <free>
+          <format>text</format>
+          <length>24</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>In welcher Trägerschaft befindet sich Ihre Einrichtung?</text>
+      <response varName="A2">
+        <fixed>
+          <category>
+            <label>öffentlich</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>freigemeinnützig</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>privat</label>
+            <value>A3</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Über wie viele Betten verfügt Ihre Einrichtung?</text>
+      <response varName="A3">
+        <fixed>
+          <category>
+            <label>Bis 49 Betten</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>50 bis 99 Betten</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>100 bis 149 Betten</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>150 bis 199 Betten</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>200 bis 299 Betten</label>
+            <value>A5</value>
+          </category>
+          <category>
+            <label>300 bis 399 Betten</label>
+            <value>A6</value>
+          </category>
+          <category>
+            <label>400 bis 499 Betten</label>
+            <value>A7</value>
+          </category>
+          <category>
+            <label>500 bis 599 Betten</label>
+            <value>A8</value>
+          </category>
+          <category>
+            <label>600 bis 799 Betten</label>
+            <value>A9</value>
+          </category>
+          <category>
+            <label>800 bis 999 Betten</label>
+            <value>A10</value>
+          </category>
+          <category>
+            <label>1000 und mehr Betten</label>
+            <value>A11</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Um welche Art von Krankenhaus handelt es sich bei Ihrer Einrichtung?</text>
+      <response varName="A4">
+        <fixed>
+          <category>
+            <label>Universitätsklinik / Medizinische Hochschule</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Akademisches Lehrkrankenhaus</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Allgemeines Krankenhaus (inkl. Bundeswehrkrankenhaus)</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Krankenhaus mit psychiatrischem bzw. psychosomatischem Schwerpunkt</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welcher Krankenhausstatus trifft aus Ihre Einrichtung zu?</text>
+      <response varName="A5">
+        <fixed>
+          <category>
+            <label>Einzelkrankenhaus an einem Standort</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Einzelkrankenhaus mit mehreren Standorten</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Krankenhaus eines Klinikkonzerns (z. B. Helios, Askplepios, Rhön, Sana, Vivantes, Ameos o.ä.)</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Krankenhaus in einem Verbund (z. B. als eingetragener Verein) mit folgender Mitgliederanzahl</label>
+            <value>-oth-</value>
+            <contingentQuestion varName="A5other">
+              <text>Krankenhaus in einem Verbund (z. B. als eingetragener Verein) mit folgender Mitgliederanzahl</text>
+              <length>24</length>
+            </contingentQuestion>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Verfügt Ihre Einrichtung über einen OP?</text>
+      <response varName="A6">
+        <fixed>
+          <category>
+            <label>ja</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>nein</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bewerten Sie folgende Fragen auf einer Skala von 1-10</text>
+      <subQuestion varName="A7_SQ001">
+        <text>Wie innovativ ist Ihr Krankenhaus Ihrer Meinung nach bezogen auf den Einsatz von IT? |überhaupt nicht innovativ|überaus innovativ</text>
+      </subQuestion>
+      <subQuestion varName="A7_SQ002">
+        <text>Für wie innovationsförderlich halten Sie die gesetzlichen Rahmenbedingungen in Ihrem (Bundes-)Land mit Blick auf IT? |überhaupt nicht innovatiosförderlich|überaus innovationsförderlich</text>
+      </subQuestion>
+      <response varName="A7">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST1">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="161">
+    <sectionInfo>
+      <position>title</position>
+      <text>Klinische Dokumentationsfunktionen</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existiert in Ihrer Einrichtung eine IT-Funktion zur...?</text>
+      <subQuestion varName="KD1_SQ001">
+        <text>Arztbriefschreibung</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ002">
+        <text>Befundschreibung</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ003">
+        <text>medizinischen Basisdokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ004">
+        <text>Pflegedokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ005">
+        <text>Medikation (Leistungsanordnung)</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ006">
+        <text>OP-Dokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ007">
+        <text>Anästhesiedokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ008">
+        <text>Intensivdokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ009">
+        <text>Dokumentation der nicht ärztlichen therapeutischen Berufe</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ010">
+        <text>Wunddokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD1_SQ011">
+        <text>Hygienedokumentation</text>
+      </subQuestion>
+      <response varName="KD1">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Bereits umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bitte geben Sie an, in wie viel % der relevanten Einheiten (z.B. Stationen) die bereits umgesetzten Dokumentationsfunktionen in etwa verfügbar sind.</text>
+      <subQuestion varName="KD2_SQ001">
+        <text>Arztbriefschreibung</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ002">
+        <text>Befundschreibung</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ003">
+        <text>Medizinische Basisdokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ004">
+        <text>Pflegedokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ005">
+        <text>Medikation (Leistungsanordnung)</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ006">
+        <text>OP-Dokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ007">
+        <text>Anästhesiedokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ008">
+        <text>Intensivdokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ009">
+        <text>Dokumentation der nicht ärztlichen therapeutischen Berufe</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ010">
+        <text>Wunddokumentation</text>
+      </subQuestion>
+      <subQuestion varName="KD2_SQ011">
+        <text>Hygienedokumentation</text>
+      </subQuestion>
+      <response varName="KD2">
+        <fixed>
+          <category>
+            <label>0%</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>10%</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>20%</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>30%</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>40%</label>
+            <value>A5</value>
+          </category>
+          <category>
+            <label>50%</label>
+            <value>A6</value>
+          </category>
+          <category>
+            <label>60%</label>
+            <value>A7</value>
+          </category>
+          <category>
+            <label>70%</label>
+            <value>A8</value>
+          </category>
+          <category>
+            <label>80%</label>
+            <value>A9</value>
+          </category>
+          <category>
+            <label>90%</label>
+            <value>A10</value>
+          </category>
+          <category>
+            <label>100%</label>
+            <value>A11</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A12</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST2">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="151">
+    <sectionInfo>
+      <position>title</position>
+      <text>Leistungsanforderung und Befundrückmeldung</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existiert in Ihrer Einrichtung eine IT-Funktion zur &lt;u&gt;Leistungsanforderung und Befundrückmeldung&lt;/u&gt; für ...?</text>
+      <subQuestion varName="LB1_SQ001">
+        <text>Labordaten</text>
+      </subQuestion>
+      <subQuestion varName="LB1_SQ002">
+        <text>Radiologie / Nuklearmedizin ohne Bilder (z.B. realisiert über ein RIS)</text>
+      </subQuestion>
+      <subQuestion varName="LB1_SQ003">
+        <text>Radiologie / Nuklearmedizin mit Bildern (z.B. realisiert über ein PACS)</text>
+      </subQuestion>
+      <subQuestion varName="LB1_SQ004">
+        <text>Elektrophysiologische Untersuchungen (z. B. EKG, EEG)</text>
+      </subQuestion>
+      <subQuestion varName="LB1_SQ005">
+        <text>Andere Untersuchungen (z.B. Sonografie, endoskopische Untersuchungen)</text>
+      </subQuestion>
+      <subQuestion varName="LB1_SQ006">
+        <text>Konsile</text>
+      </subQuestion>
+      <response varName="LB1">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Bereits umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bitte geben Sie an, in wie viel % der relevanten Einheiten (z.B. Stationen) die bereits umgesetzten Funktionen zur Leistungsanordnung und Befundrückmeldung in etwa verfügbar sind.</text>
+      <subQuestion varName="LB2_SQ001">
+        <text>Labordaten</text>
+      </subQuestion>
+      <subQuestion varName="LB2_SQ002">
+        <text>Radiologie / Nuklearmedizin ohne Bilder (z.B. realisiert über ein RIS)</text>
+      </subQuestion>
+      <subQuestion varName="LB2_SQ003">
+        <text>Radiologie / Nuklearmedizin mit Bildern (z.B. realisiert über ein PACS)</text>
+      </subQuestion>
+      <subQuestion varName="LB2_SQ004">
+        <text>Elektrophysiologische Untersuchungen (z.B. EKG, EEG)</text>
+      </subQuestion>
+      <subQuestion varName="LB2_SQ005">
+        <text>Andere Untersuchungen (z.B. Sonografie, endoskopische Untersuchungen)</text>
+      </subQuestion>
+      <subQuestion varName="LB2_SQ006">
+        <text>Konsile</text>
+      </subQuestion>
+      <response varName="LB2">
+        <fixed>
+          <category>
+            <label>10%</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>20%</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>30%</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>40%</label>
+            <value>A5</value>
+          </category>
+          <category>
+            <label>50%</label>
+            <value>A6</value>
+          </category>
+          <category>
+            <label>60%</label>
+            <value>A7</value>
+          </category>
+          <category>
+            <label>70%</label>
+            <value>A8</value>
+          </category>
+          <category>
+            <label>80%</label>
+            <value>A9</value>
+          </category>
+          <category>
+            <label>90%</label>
+            <value>A10</value>
+          </category>
+          <category>
+            <label>100%</label>
+            <value>A11</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A12</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST3">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="150">
+    <sectionInfo>
+      <position>title</position>
+      <text>Entscheidungsunsterstützung</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existiert in Ihrer Einrichtung eine IT-Funktion für...?</text>
+      <subQuestion varName="EN1_SQ001">
+        <text>Medizinische Leitlinien und klinische Pfade</text>
+      </subQuestion>
+      <subQuestion varName="EN1_SQ002">
+        <text>Klinische Erinnerungsfunktionen (z. B. Auflistung von Patienten, bei denen noch Maßnahmen ausstehen)</text>
+      </subQuestion>
+      <subQuestion varName="EN1_SQ003">
+        <text>Alarmfunktionen (z. B. Laborwerte außerhalb des Normbereichs)</text>
+      </subQuestion>
+      <subQuestion varName="EN1_SQ004">
+        <text>Unterstützung Arzneimitteltherapie (z. B. Prüfung von Wechselwirkungen)</text>
+      </subQuestion>
+      <subQuestion varName="EN1_SQ005">
+        <text>Zugang zu klinischen Datenbanken / klinischem Wissen am point of care (z. B. Rote Liste, UpToDate o.ä.)</text>
+      </subQuestion>
+      <subQuestion varName="EN1_SQ006">
+        <text>Entscheidungsunterstützungsfunktionen für Diagnostik, Therapie &amp; Pflege, die nicht auf die Medikation bezogen sind</text>
+      </subQuestion>
+      <response varName="EN1">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Bereits umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte geben Sie an, in wie viel % der relevanten Einheiten (z.B. Stationen) die bereits umgesetzten Funktionen zur Entscheidungsunterstützung in etwa verfügbar sind.&lt;/p&gt;</text>
+      <subQuestion varName="EN2_SQ001">
+        <text>Medizinische Leitlinien und klinische Pfade</text>
+      </subQuestion>
+      <subQuestion varName="EN2_SQ002">
+        <text>Klinische Erinnerungsfunktionen (z. B. Auflistung von Patienten, bei denen noch Maßnahmen ausstehen)</text>
+      </subQuestion>
+      <subQuestion varName="EN2_SQ003">
+        <text>Alarmfunktionen (z. B. Laborwerte außerhalb des Normbereichs)</text>
+      </subQuestion>
+      <subQuestion varName="EN2_SQ004">
+        <text>Unterstützung Arzneimitteltherapie (z. B. Prüfung von Wechselwirkungen)</text>
+      </subQuestion>
+      <subQuestion varName="EN2_SQ005">
+        <text>Zugang zu klinischen Datenbanken / klinischem Wissen am point of care (z. B. Rote Liste, UpToDate o.ä.)</text>
+      </subQuestion>
+      <subQuestion varName="EN2_SQ006">
+        <text>Entscheidungsunterstützungsfunktionen für Diagnostik, Therapie &amp; Pflege, die nicht auf die Medikation bezogen sind</text>
+      </subQuestion>
+      <response varName="EN2">
+        <fixed>
+          <category>
+            <label>10%</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>20%</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>30%</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>40%</label>
+            <value>A5</value>
+          </category>
+          <category>
+            <label>50%</label>
+            <value>A6</value>
+          </category>
+          <category>
+            <label>60%</label>
+            <value>A7</value>
+          </category>
+          <category>
+            <label>70%</label>
+            <value>A8</value>
+          </category>
+          <category>
+            <label>80%</label>
+            <value>A9</value>
+          </category>
+          <category>
+            <label>90%</label>
+            <value>A10</value>
+          </category>
+          <category>
+            <label>100%</label>
+            <value>A11</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A12</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST4">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="152">
+    <sectionInfo>
+      <position>title</position>
+      <text>Patientensicherheit</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existiert in Ihrer Einrichtung eine IT-Funktion für ...?</text>
+      <subQuestion varName="P1_SQ001">
+        <text>Laborprobenidentifikation</text>
+      </subQuestion>
+      <subQuestion varName="P1_SQ002">
+        <text>Arzneimittelverfolgung</text>
+      </subQuestion>
+      <subQuestion varName="P1_SQ003">
+        <text>Arzneimittelgabe (eMAR)</text>
+      </subQuestion>
+      <subQuestion varName="P1_SQ004">
+        <text>Patientenidentifikation</text>
+      </subQuestion>
+      <subQuestion varName="P1_SQ005">
+        <text>CIRS (Critical Incident Reporting System)</text>
+      </subQuestion>
+      <subQuestion varName="P1_SQ006">
+        <text>Checklisten</text>
+      </subQuestion>
+      <response varName="P1">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Bereits umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bitte geben Sie an, in wie viel % der relevanten Einheiten (z.B. Stationen) die bereits umgesetzten Funktionen zur Patientensicherheit in etwa verfügbar sind.</text>
+      <subQuestion varName="P2_SQ001">
+        <text>Laborprobenidentifikation</text>
+      </subQuestion>
+      <subQuestion varName="P2_SQ002">
+        <text>Arzneimittelverfolgung</text>
+      </subQuestion>
+      <subQuestion varName="P2_SQ003">
+        <text>Arzneimittelgabe (eMAR)</text>
+      </subQuestion>
+      <subQuestion varName="P2_SQ004">
+        <text>Patientenidentifikation</text>
+      </subQuestion>
+      <subQuestion varName="P2_SQ005">
+        <text>CIRS (Critical Incident Reporting System)</text>
+      </subQuestion>
+      <subQuestion varName="P2_SQ006">
+        <text>Checklisten</text>
+      </subQuestion>
+      <response varName="P2">
+        <fixed>
+          <category>
+            <label>10%</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>20%</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>30%</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>40%</label>
+            <value>A5</value>
+          </category>
+          <category>
+            <label>50%</label>
+            <value>A6</value>
+          </category>
+          <category>
+            <label>60%</label>
+            <value>A7</value>
+          </category>
+          <category>
+            <label>70%</label>
+            <value>A8</value>
+          </category>
+          <category>
+            <label>80%</label>
+            <value>A9</value>
+          </category>
+          <category>
+            <label>90%</label>
+            <value>A10</value>
+          </category>
+          <category>
+            <label>100%</label>
+            <value>A11</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A12</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST5">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="153">
+    <sectionInfo>
+      <position>title</position>
+      <text>Querschnittsfunktionen</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>&lt;u&gt;Versorgungsfunktionen:&lt;/u&gt; Existiert in Ihrer Einrichtung eine IT-Funktion für...?</text>
+      <subQuestion varName="S1_SQ001">
+        <text>Stationäres Patientenmanagement (Aufnahme / Verlegung / Entlassung)</text>
+      </subQuestion>
+      <subQuestion varName="S1_SQ002">
+        <text>Ambulantes Patientenmanagement / Ambulanzmanagement</text>
+      </subQuestion>
+      <subQuestion varName="S1_SQ003">
+        <text>Elektronisches Archiv</text>
+      </subQuestion>
+      <subQuestion varName="S1_SQ004">
+        <text>Qualitätsmanagement</text>
+      </subQuestion>
+      <response varName="S1">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Vollständig umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;u&gt;Schnittstellenfunktionen:&lt;/u&gt; Existiert in Ihrer Einrichtung ein IT-Funktion für...?</text>
+      <subQuestion varName="VS1_SQ001">
+        <text>Materialwirtschaft unter Verwendung von Standards (z. B. GTIN, EAN, PZN)</text>
+      </subQuestion>
+      <subQuestion varName="VS1_SQ002">
+        <text>Materialwirtschaft ohne Standards</text>
+      </subQuestion>
+      <subQuestion varName="VS1_SQ003">
+        <text>Apotheke</text>
+      </subQuestion>
+      <subQuestion varName="VS1_SQ004">
+        <text>Essenbestellung</text>
+      </subQuestion>
+      <response varName="VS1">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Vollständig umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;u&gt;Telemedizin &amp; -monitoring:&lt;/u&gt; Existiert in Ihrer Einrichtung eine IT-Funktion für...?</text>
+      <subQuestion varName="Tel_SQ006">
+        <text>...Telemedizin (z. B. Teleradiologie für Zweitmeinung oder Fallkonferenzen)</text>
+      </subQuestion>
+      <subQuestion varName="Tel_SQ007">
+        <text>...Telemonitoring (z. B. von Herzschrittmacherpatienten)</text>
+      </subQuestion>
+      <response varName="Tel">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Vollständig umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bitte beschreiben Sie den aktuellen Nutzungsgrad der Elektronischen Patientenakte (EPA) in Ihrer Einrichtung</text>
+      <response varName="I10">
+        <fixed>
+          <category>
+            <label>Wir haben noch nicht begonnen, die EPA-Implementierung zu planen</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Wir entwickeln gerade einen Implementierungsplan für die EPA</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Wir haben begonnen, ein EPA-System zu installieren (teilfunktionsfähiges EPA-System)</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Wir haben ein voll funktionsfähiges EPA-System</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bitte geben Sie an, in wie vielen relevanten Einheiten Ihr EPA-System zur Verfügung steht.</text>
+      <subQuestion varName="I11_SQ001">
+        <text>|verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <response varName="I11">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST6">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="147">
+    <sectionInfo>
+      <position>title</position>
+      <text>Integration &amp; Interoperabilität</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Bitte klassifizieren Sie die Architektur Ihres Krankenhausinformationssystems auf einer Skala von &quot;homogen&quot; (0) bis &quot;heterogen&quot; (10)</text>
+      <subQuestion varName="I1_SQ001">
+        <text>|homogen / zentrale Datenhaltung (ein Anbieter für alle Aufgaben)|heterogen / dezentrale Datenhaltung (Kombination mehrerer Anbieter / best of breed)</text>
+      </subQuestion>
+      <response varName="I1">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Wie schätzen Sie die durchgängige Verfügbarkeit wesentlicher Daten eines Patienten (Stammdaten, Diagnosen, Therapien) über alle heterogenen Systeme hinweg ein?&lt;/p&gt;</text>
+      <response varName="I4">
+        <fixed>
+          <category>
+            <label>Sehr gut</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Gut</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Mittelmäßig</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Schlecht</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>Sehr schlecht</label>
+            <value>A5</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie werden heterogene Systeme integriert? (Mehrfachnennungen möglich)</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>Über eine Datenbank</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Über einen Kommunikationsserver</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>Über Individualschnittstellen</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ004">
+        <fixed>
+          <category>
+            <label>Nicht integriert</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche der folgenden Standards nutzen Sie in Ihrer Einrichtung?</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>HL7 V2 Nachrichten</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>DICOM</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>HL7 V3 Nachrichten</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ004">
+        <fixed>
+          <category>
+            <label>IHE Profile</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ005">
+        <fixed>
+          <category>
+            <label>HL7 CDA&apos;s</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ006">
+        <fixed>
+          <category>
+            <label>HL7 RIM</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="I3T">
+        <fixed>
+          <category>
+            <label>Sonstiges</label>
+            <value>1</value>
+            <contingentQuestion varName="I3other">
+              <text>Sonstiges</text>
+              <length>24</length>
+            </contingentQuestion>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>In wie vielen Subsystemen / Modulen Ihrer IT-Landschaft sind folgende, wesentliche Patientendaten durchgängig integriert, d. h. verfügbar?</text>
+      <subQuestion varName="I5_SQ001">
+        <text>Patientenstammdaten |in ca.|% der Subsysteme</text>
+      </subQuestion>
+      <subQuestion varName="I5_SQ002">
+        <text>Diagnosen |in ca.|% der Subsysteme</text>
+      </subQuestion>
+      <subQuestion varName="I5_SQ003">
+        <text>Therapien / Prozeduren |in ca.|% der Subsysteme</text>
+      </subQuestion>
+      <response varName="I5">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Existiert in Ihrer Einrichtung ein IT-Funktion zur Erstellung und Steuerung eines Master Patient Index (MPI) mit dem Ziel der eindeutigen Identifizierung von Patienten?</text>
+      <subQuestion varName="I6_SQ001">
+        <text>...mit Anbindung an interne Systeme (innerhalb Ihrer Einrichtung)</text>
+      </subQuestion>
+      <subQuestion varName="I6_SQ002">
+        <text>...mit Anbindung an externe Systeme (außerhalb Ihrer Einrichtung)</text>
+      </subQuestion>
+      <response varName="I6">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Vollständig umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST7">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="154">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT Unterstützung bei der Aufnahme</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Werden Patientendaten (jenseits der Stammdaten auf der eGK) aus vorgelagerten Versorgungsstufen (z. B. niedergelassenen Arztpraxen, MVZ, andere KH) in das IT-System Ihrer Einrichtung übernommen?</text>
+      <response varName="AU1">
+        <fixed>
+          <category>
+            <label>Nein, es werden in der Regel keine Daten aus vorgelagerten Stufen übernommen (auch nicht in Papierform).</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Nein, Daten werden nur in Papierform übernommen.</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie werden die Daten aus vorgelagerten Versorgungsstufen in der Regel übernommen?</text>
+      <response varName="AU2">
+        <fixed>
+          <category>
+            <label>von Papier abgetippt</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Papier eingescannt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>über E-Mail</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>über ein Portal</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>mit anderen IT-Lösungen und zwar:</label>
+            <value>-oth-</value>
+            <contingentQuestion varName="AU2other">
+              <text>mit anderen IT-Lösungen und zwar:</text>
+              <length>24</length>
+            </contingentQuestion>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche Daten mit Ursprung aus vorgelagerten Versorgungsstufen stehen den Anwendern elektronisch zur Verfügung?</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>Patientenstammdaten (Identifikationsdaten)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Falldaten (Diagnose- und Therapieschlüssel)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>Befunde - Text</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ004">
+        <fixed>
+          <category>
+            <label>Befunde - Bilder</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ005">
+        <fixed>
+          <category>
+            <label>Befunde - elektrophysiologische Diagnostik</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ006">
+        <fixed>
+          <category>
+            <label>Arztbrief inkl. Medikation und Vitalparametern</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ007">
+        <fixed>
+          <category>
+            <label>Andere Daten</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Exisitert in Ihrer Einrichtung eine IT-Funktion für...?</text>
+      <subQuestion varName="AU4_SQ001">
+        <text>...die Triagierung bzw. Steuerung von Notfallpatienten?</text>
+      </subQuestion>
+      <subQuestion varName="AU4_SQ002">
+        <text>...die Unterstützung der Anamnese und Patientenaufklärung?</text>
+      </subQuestion>
+      <subQuestion varName="AU4_SQ003">
+        <text>...die Belegungssteuerung?</text>
+      </subQuestion>
+      <response varName="AU4">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Bereits umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>In wie viel % der relevanten Einheiten ist die IT-Funktion zur Unterstützung der Anamnese und Patientenaufklärung verfügbar?</text>
+      <subQuestion varName="AU5_SQ001">
+        <text>|in|% der Einheiten</text>
+      </subQuestion>
+      <response varName="AU5">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Können Patienten online Termine buchen?</text>
+      <response varName="AU6">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A3</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST8">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="148">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT Unterstützung in der Visite</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Welche Patientendaten werden für die Visite stationär (z. B. über den PC oder das Bedside-Terminal) und welche werden mobil (z.B. über Smartphone, Tablet oder Computer on Wheels) zur Verfügung gestellt?</text>
+      <subQuestion varName="V2_SQ001">
+        <text>Patientenstammdaten (Identifikationsdaten)</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ002">
+        <text>Falldaten (Diagnose- und Therapieschlüssel)</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ003">
+        <text>Leistungsanforderungen</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ004">
+        <text>Befunde - Text</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ005">
+        <text>Befunde - Bilder</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ006">
+        <text>Befunde - elektrophyiologische Diagnostik</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ007">
+        <text>Kurve inkl. Medikamente, Vitalparameter</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ008">
+        <text>Auffällige Werte (Warnungen)</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ009">
+        <text>Checklisten</text>
+      </subQuestion>
+      <subQuestion varName="V2_SQ010">
+        <text>Andere Daten</text>
+      </subQuestion>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>stationär verfügbar</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>mobil verfügbar</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie viele Stationen haben einen stationären elektronischen Zugang (über den Arbeitsplatzrechner, z. B. im Stationszimmer oder in der Leitstelle) und wie viele einen mobilen elektronischen Zugang (z.B. über Computer on Wheels / Notebooks, Smartphone oder Tablet) zu den Daten Ihrer Patienten?</text>
+      <subQuestion varName="V3_SQ001">
+        <text>|Einen stationären Zugang haben| % der Stationen.</text>
+      </subQuestion>
+      <subQuestion varName="V3_SQ002">
+        <text>|Einen mobilen Zugang haben| % der Stationen.</text>
+      </subQuestion>
+      <response varName="V3">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>In wie vielen Einheiten ist das drahtlose Netzwerk (WLAN) in Ihrer Einrichtung umgestzt?</text>
+      <subQuestion varName="I7_SQ001">
+        <text>|in ca.|% der Einheiten</text>
+      </subQuestion>
+      <response varName="I7">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Welche Hardware steht den Anwendern zur Verarbeitung von Patientendaten zur Verfügung?</text>
+      <subQuestion varName="I8_SQ001">
+        <text>PC (Arbeitsplatzrechner / Fat-Client z. B. im Stationszimmer oder Leitstelle) | verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="I8_SQ002">
+        <text>Notebook (inkl. Computer on Wheels) | verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="I8_SQ003">
+        <text>Bedside Terminal (Computer fest am Bettplatz installiert) | verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="I8_SQ004">
+        <text>Tablet-PC | verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="I8_SQ005">
+        <text>Smartphone / PDA | verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="I8_SQ006">
+        <text>Thin-Client | verfügbar in ca.|% der Einheiten</text>
+      </subQuestion>
+      <response varName="I8">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST9">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="155">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT Unterstützung im OP</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existiert in Ihrer Einrichtung eine IT-Funktion zur elektronischen OP-Planung?</text>
+      <response varName="O1">
+        <fixed>
+          <category>
+            <label>Ja</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Nein</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche der folgenden Funktionen sind darin verfügbar?</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>Terminvergabe</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Planung OP-Saal</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>Ressourcenplanung (Personal, Material)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie werden die Patientendaten von den Stationen in den OP übernommen?</text>
+      <response varName="O3">
+        <fixed>
+          <category>
+            <label>Patientendaten werden nicht in den OP übernommen</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Übernahme der Daten in Papierform</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Elektronische Übernahme anhand eines Berichtes (z.B. PDF)</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Elektronische Übernahme einzelner Daten (aus einer Datenbank)</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>Elektronische Übernahme aller Daten (aus einer Datenbank)</label>
+            <value>A5</value>
+          </category>
+          <category>
+            <label>[Im OP wird ein und dasselbe System verwendet wie auf den Stationen] ??</label>
+            <value>A6</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A7</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche Daten und Anwendungen stehen den Anästhesisten und den Operateuren &lt;u&gt;vor der OP&lt;/u&gt; im OP-Managementsystem oder im KIS zur verfügung und welche Daten &lt;u&gt;aus dem OP&lt;/u&gt; stehen nach der OP im System der Normalstation bzw. Intensivstation zur Verfügung?</text>
+      <subQuestion varName="O4_SQ001">
+        <text>Patientenstammdaten (Identifikationsdaten)</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ002">
+        <text>Falldaten (Diagnose- und Therapieschlüssel)</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ003">
+        <text>Leistungsanforderungen</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ004">
+        <text>Befunde - Text</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ005">
+        <text>Befunde - Bilder</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ006">
+        <text>Befunde - elektrophyiologische Diagnostik</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ007">
+        <text>Kurve inkl. Medikamente, Vitalparameter</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ008">
+        <text>Auffällige Werte (Warnungen)</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ009">
+        <text>Checklisten</text>
+      </subQuestion>
+      <subQuestion varName="O4_SQ010">
+        <text>Andere Daten</text>
+      </subQuestion>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>Für den Operateur oder Anästhesiten vor der OP verfügbar</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Daten aus dem OP im System der Normalstation verfügbar</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>Daten aus dem OP im System der Intensivstation verfügbar</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie werden die Patientendaten aus dem OP auf die Intensiv-, bzw. auf die Normalstation übernommen?</text>
+      <subQuestion varName="O5_SQ001">
+        <text>Normalstation</text>
+      </subQuestion>
+      <subQuestion varName="O5_SQ002">
+        <text>Intensivstation</text>
+      </subQuestion>
+      <response varName="O5">
+        <fixed>
+          <category>
+            <label>Übernahme der Daten in Form eines Papierberichtes</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Elektronische Übernahme anhand eines Berichtes (z.B. PDF)</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Elektronische Übernahme von einzelnen Daten (aus einer Datenbank)</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Elektronische Übernahme aller Daten (aus einer Datenbank)</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A5</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Können aus den im OP gewonnen Daten automatische Auswertungen und Reports zur Verbesserung der Abläufe erstellt werden?</text>
+      <response varName="O6">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST10">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="149">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT Unterstützung bei der Entlassung</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Wird der Arztbrief elektronisch für niedergelassene Ärzte bereitgestellt?</text>
+      <response varName="E1">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja, über E-Mail</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Ja, über ein Portal</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>ja, mit anderen IT-Lösungen und zwar</label>
+            <value>-oth-</value>
+            <contingentQuestion varName="E1other">
+              <text>ja, mit anderen IT-Lösungen und zwar</text>
+              <length>24</length>
+            </contingentQuestion>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche Daten stellt das elektronische System automatisch für die Arztbriefschreibung zur Verfügung?</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>Patientenstammdaten (Identifikationsdaten)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Falldaten (Diagnose- und Therapieschlüssel)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>Anamnese</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ004">
+        <fixed>
+          <category>
+            <label>Befunde - Text</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ005">
+        <fixed>
+          <category>
+            <label>Befunde - Bilder</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ006">
+        <fixed>
+          <category>
+            <label>Befunde - elektrophyiologische Diagnostik</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ007">
+        <fixed>
+          <category>
+            <label>Kurve inkl. Medikamente, Vitalparameter</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ008">
+        <fixed>
+          <category>
+            <label>OP-Daten</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ009">
+        <fixed>
+          <category>
+            <label>Andere Daten</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Existiert in Ihrer Einrichtung eine IT-Funktion für...?</text>
+      <subQuestion varName="E3_SQ001">
+        <text>...das digitale Diktat?</text>
+      </subQuestion>
+      <subQuestion varName="E3_SQ002">
+        <text>...die Kommunikation mit Gesundheitsdienstleistern im ambulanten Bereich (z.B. Portallösungen)?</text>
+      </subQuestion>
+      <subQuestion varName="E3_SQ003">
+        <text>...zur Erstellung von Pflegeberichten (Überleitungsbögen) für nachgelagerte Versorgungsstufen?</text>
+      </subQuestion>
+      <response varName="E3">
+        <fixed>
+          <category>
+            <label>Keine Umsetzung / kein spezieller Plan für die Umsetzung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Mit der Umsetzung begonnen oder Ressourcen bereit gestellt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Bereits umgesetzt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Weiß nicht</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>In wie viel % der relevanten Einheiten stehen die bereits umgesetzten Funktionen zur Verfügung?</text>
+      <subQuestion varName="E4_SQ001">
+        <text>Digitales Diktat |verfügbar in|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="E4_SQ002">
+        <text>Kommunikation mit ambulanten Gesundheitsdienstleistern |verfügbar in|% der Einheiten</text>
+      </subQuestion>
+      <subQuestion varName="E4_SQ003">
+        <text>Erstellung von Pflegeberichten (Überleitungsbögen) für nachgelagerte Versorgungsstufen |verfügbar in|% der Einheiten</text>
+      </subQuestion>
+      <response varName="E4">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST11">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="156">
+    <sectionInfo>
+      <position>title</position>
+      <text>Prozessunterstützung Allgemein</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Wie schätzen Sie die IT-Unterstützung in den jeweiligen Prozessen insgesamt ein?</text>
+      <subQuestion varName="PA1_SQ001">
+        <text>Aufnahme</text>
+      </subQuestion>
+      <subQuestion varName="PA1_SQ002">
+        <text>Visite</text>
+      </subQuestion>
+      <subQuestion varName="PA1_SQ003">
+        <text>OP-Vorbereitung</text>
+      </subQuestion>
+      <subQuestion varName="PA1_SQ004">
+        <text>OP-Nachbereitung</text>
+      </subQuestion>
+      <subQuestion varName="PA1_SQ005">
+        <text>Entlassung</text>
+      </subQuestion>
+      <response varName="PA1">
+        <fixed>
+          <category>
+            <label>mangelhaft</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>ausreichend</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>befriedigend</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>gut</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>sehr gut</label>
+            <value>A5</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte geben Sie Ihre Einschätzung zu folgender Aussage über die Gesamtheit Ihrer Krankenhaus-IT ab:&lt;/p&gt;</text>
+      <subQuestion varName="PA2_SQ001">
+        <text>&quot;Die IT in unserer Einrichtung ist jederzeit in der Lage, die richtigen Informationen, zum richtigen Zeitpunkt, am richtigen Ort und in der richtigen Qualität für die klinischen Prozessen bereitzustellen&quot;</text>
+      </subQuestion>
+      <response varName="PA2">
+        <fixed>
+          <category>
+            <label>Stimme überhaupt nicht zu</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Stimme eher nicht zu</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Stimme eher zu</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Stimme voll zu</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST12">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="157">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT Management: Aufbauorganisation I</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <sectionInfo>
+      <position>before</position>
+      <text>Falls Ihre IT-Abteilung teilweise oder vollständig ausgelagert ist, beantworten Sie die folgenden Fragen nach Möglichkeit bitte auch stellvertretend für die jeweilige Servicegesellschaft (so, als handele es sich um eine zusammenhängende IT-Abteilung, die nur für Ihre Einrichtung zuständig ist).</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Wie ist Ihre IT-Abteilung organisiert?</text>
+      <response varName="IM1">
+        <fixed>
+          <category>
+            <label>Wir haben keine gesonderte IT-Abteilung</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Als interne Abteilung des Krankenhauses</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Zentralisiert auf Gruppen- bzw. Verbundsebene</label>
+            <value>A3</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Ist die IT-Abteilung teilweise oder vollständig ausgelagert?</text>
+      <response varName="IM2">
+        <fixed>
+          <category>
+            <label>Nicht ausgelagert</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Teilweise an externe Dienstleister ausgelagert</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Vollständig an externe Dienstleister ausgelagert</label>
+            <value>A3</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Über wie viele Mitarbeiter verfügt die IT-Abteilung? (Köpfe)</text>
+      <response varName="IM3">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Bitte geben Sie an, wie viele der Mitarbeiter (in %) für Basisdienste &amp; Netzwerkadministration bzw. für die Anwenderbetreuung &amp; klinische Prozesse zuständig sind.</text>
+      <subQuestion varName="IM4_SQ001">
+        <text>|Zuständig für die Netzwerkadministration &amp; Basisdienste:|%</text>
+      </subQuestion>
+      <subQuestion varName="IM4_SQ002">
+        <text>|Zuständig für die Anwenderbetreuung &amp; klinische Prozesse:|%</text>
+      </subQuestion>
+      <response varName="IM4">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Wie viele Anwender werden schätzungsweise durch die IT-Abteilung betreut? (Anzahl Köpfe)</text>
+      <response varName="IM5">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Sind Sie als IT-Leiter / IT-Verantwortlicher Mitglied der Krankenhausleitung?</text>
+      <response varName="IM6">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Nein, aber als Stabsstelle eingesetzt</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A3</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST13">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="163">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT Management: Aufbauorganisation II</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Bitte geben Sie eine Einschätzung darüber ab, wie zentral bzw. dezentral die IT-Abteilung im Allgemeinen organisiert ist</text>
+      <subQuestion varName="IM7_SQ001">
+        <text>Bezogen auf IT-Entscheidungen (werden diese vornehmlich zentral oder dezentral getroffen?)</text>
+      </subQuestion>
+      <subQuestion varName="IM7_SQ002">
+        <text>Bezogen auf IT-Serviceleistungen (ist der Anwendersupport zentral oder dezentral organisiert?)</text>
+      </subQuestion>
+      <response varName="IM7">
+        <fixed>
+          <category>
+            <label>dezentral</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>eher dezentral</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>eher zentral</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>zentral</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie schätzen Sie die Güte der Strukturen und Ressourcen des Projektmanagements in Ihrem Krankenhaus ein?</text>
+      <response varName="IM8">
+        <fixed>
+          <category>
+            <label>Mangelhaft</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ausreichend</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Befriedigend</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Gut</label>
+            <value>A4</value>
+          </category>
+          <category>
+            <label>Sehr gut</label>
+            <value>A5</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Ist in Ihrer Einrichtung ein Mediziner und / oder eine Pflegekraft offiziell zuständig für IT-Angelegenheiten?</text>
+      <subQuestion varName="IM9_SQ001">
+        <text>Ein Mediziner ist zuständig für IT-Angelegenheiten</text>
+      </subQuestion>
+      <subQuestion varName="IM9_SQ002">
+        <text>Eine Pflegekraft ist zuständig für IT-Angelegenheiten</text>
+      </subQuestion>
+      <response varName="IM9">
+        <fixed>
+          <category>
+            <label>Ja</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Nein</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Gibt es in Ihrer Einrichtung ein oder mehrere Key-User (offiziell oder inoffiziell), die sich für IT-Lösungen in der klinischen Praxis einsetzen (Multiplikatoren)?</text>
+      <response varName="IM10">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Eher nein</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Eher ja</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche Personen fungieren üblicherweise als Projektleitung bei der Umsetzung von IT-Projekten in die klinische Praxis und bei Schulungen (dedizierter Projektleiter mit fomeller Ausbildung im Projektmanagement)?</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>IT-Mitarbeiter</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Ärzte / Pflegekräfte (Key-User)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>unabhängige Projektmanager</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Ist Ihre IT-Abteilung zertifiziert? (nach ISO, KTQ, BSI oder sonstigem)</text>
+      <response varName="IM12">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST14">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="158">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT-Management: Strategie</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existiert in Ihrem Verbund eine einheitliche IT-Strategie?</text>
+      <response varName="IMS1">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Gibt es in Ihrer Einrichtung einen strategischen IT-Plan und inwieweit ist dieser in den strategischen Krankenhausplan integriert?</text>
+      <response varName="IMS2">
+        <fixed>
+          <category>
+            <label>Wir haben keinen strategischen IT-Plan.</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Wir entwickeln gerade einen strategischen IT-Plan.</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Es gibt einen IT-Plan, der jedoch nicht mit der Krankenhausstrategie abgeglichen ist.</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Der IT-Plan ist mit der Krankenhausstrategie abgeglichen oder integraler Bestandteil derer.</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Was sind die wichtigsten IT-Ziele Ihrer Einrichtung?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hinweis: Es müssen nicht alle gelisteten Ziele in Reihenfolge gebracht werden. Sie können sich gern auch auf die wichtigsten ca. 2-5 fokussieren.&lt;/em&gt;&lt;/p&gt;</text>
+      <subQuestion varName="IMS3_A1">
+        <text>Verbesserte Unterstützung klinischer Prozesse durch IT</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A2">
+        <text>Verbesserung der Innovationskraft bzw. Innovationsfähigkeit</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A3">
+        <text>Verbesserte Integration bzw. Interoperabilität heterogener IT-Lösungen</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A4">
+        <text>Verbesserung der Anwenderzufriedenheit z. B. durch verbesserten Anwenderservice &amp; -support</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A5">
+        <text>Senkung von Kosten (Effizienzverbesserungen)</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A6">
+        <text>Steigerung oder Sicherung von Erlösen</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A7">
+        <text>Verbesserung der Patientensicherheit</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A8">
+        <text>Verbesserung der IT-Managementstrukturen</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A9">
+        <text>Verbesserte Vernetzung mit anderen Institutionen</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A10">
+        <text>Verbesserung der IT-Sicherheit bzw. des Datenschutzes</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A11">
+        <text>Verbesserung der Mobilität</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A12">
+        <text>Verbesserung der Betriebsstabilität bzw. Systemperformance</text>
+      </subQuestion>
+      <subQuestion varName="IMS3_A13">
+        <text>Nutzung bzw. Verbreitung bestehender Anwendungen verbessern</text>
+      </subQuestion>
+      <response varName="IMS3">
+        <free>
+          <format>integer</format>
+          <length>2</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte geben Sie eine Einschätzung darüber ab, wie viele IT-Projekte in den vergangenen 3 Jahren &quot;ad hoc&quot; gestartetet wurden und wie viele aus der IT-Strategie abgeleitet wurden (Im Verhältnis).&lt;/p&gt;</text>
+      <subQuestion varName="IMS4_SQ001">
+        <text>|ad hoc gestartet |%</text>
+      </subQuestion>
+      <subQuestion varName="IMS4_SQ002">
+        <text>|aus Strategie abgeleitet |%</text>
+      </subQuestion>
+      <response varName="IMS4">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Gibt es in Ihrer Einrichtung ein IT-Budget?</text>
+      <response varName="IMS5">
+        <fixed>
+          <category>
+            <label>Es gibt kein extra ausgewiesenes IT-Budget</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Es gibt ein zweckbezogenes bzw. projektbezogenes IT-Budget</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Es gibt ein ausgewiesenes IT-Budget ohne Aufteilung</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Es gibt getrennte IT-Budgets für laufende IT-Aufwendungen und IT-Investitionen</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie viel Prozent des Krankenhausbudgets macht das IT-Budget in Ihrer Einrichtung näherungsweise aus (inkl. Kosten für ggfs. outgesourcte IT-Dienste)</text>
+      <response varName="IMS6">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Ist Ihre Einrichtung Referenzhaus für einen IT-Hersteller?</text>
+      <response varName="IMS7">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST15">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="159">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT-Management: Ablauforganisation I</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>Existieren in Ihrer Einrichtung festgelegte IT-Managementprozesse im Sinne einer IT-Governance (z. B. basierend auf COBIT oder ITIL)</text>
+      <response varName="IMA1">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A2</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte beschreiben Sie den Reifegrad der folgenden IT-Managementprozesse bzw. Aufgaben in Ihrer Einrichtung:&lt;/p&gt;
+
+&lt;p&gt;I. Grundlegende Organisation &amp; Planung&lt;/p&gt;</text>
+      <subQuestion varName="IMA2_SQ001">
+        <text>Kapazitäts- und Performance-Planung (technische und personelle Ressourcen)</text>
+      </subQuestion>
+      <subQuestion varName="IMA2_SQ002">
+        <text>IT-Sicherheitsmanagement</text>
+      </subQuestion>
+      <subQuestion varName="IMA2_SQ003">
+        <text>Finanz- und Investitionsplanung</text>
+      </subQuestion>
+      <subQuestion varName="IMA2_SQ004">
+        <text>Zusammenarbeit mit IT-Herstellern</text>
+      </subQuestion>
+      <subQuestion varName="IMA2_SQ005">
+        <text>Risikomanagement</text>
+      </subQuestion>
+      <subQuestion varName="IMA2_SQ006">
+        <text>IT-Portfoliomanagement (Übersichtsmonitoring in Betrieb befindlicher und geplanter Lösungen und Dienste)</text>
+      </subQuestion>
+      <response varName="IMA2">
+        <fixed>
+          <category>
+            <label>wird in unserer Einrichtung nicht durchgeführt</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>wird unregelmäßig durchgeführt (ad hoc)</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>wird regelmäßig, aber unterschiedlich durchgeführt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>wird als definierter Managementprozess regelmäßig durchgeführt</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte beschreiben Sie den Reifegrad der folgenden IT-Managementprozesse bzw. Aufgaben in Ihrer Einrichtung:&lt;/p&gt;
+
+&lt;p&gt;II. Beschaffung und Implementierung&lt;/p&gt;</text>
+      <subQuestion varName="IMA3_SQ001">
+        <text>Projektplanung &amp; -management</text>
+      </subQuestion>
+      <subQuestion varName="IMA3_SQ002">
+        <text>Systematische Auwahl des IT-Herstellers</text>
+      </subQuestion>
+      <subQuestion varName="IMA3_SQ003">
+        <text>Prozessmodellierung</text>
+      </subQuestion>
+      <subQuestion varName="IMA3_SQ004">
+        <text>Anforderungsdefinition (Lastenheft)</text>
+      </subQuestion>
+      <subQuestion varName="IMA3_SQ005">
+        <text>Change-Management</text>
+      </subQuestion>
+      <subQuestion varName="IMA3_SQ006">
+        <text>Weiterführende Zusammenarbeit mit Herstellern (gemeinsame Produktentwicklung)</text>
+      </subQuestion>
+      <response varName="IMA3">
+        <fixed>
+          <category>
+            <label>wird in unserer Einrichtung nicht durchgeführt</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>wird unregelmäßig durchgeführt (ad hoc)</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>wird regelmäßig, aber unterschiedlich durchgeführt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>wird als definierter Managementprozess regelmäßig durchgeführt</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte beschreiben Sie den Reifegrad der folgenden IT-Managementprozesse bzw. Aufgaben in Ihrer Einrichtung:&lt;/p&gt;
+
+&lt;p&gt;III. Auslieferung und Betrieb&lt;/p&gt;</text>
+      <subQuestion varName="IMA4_SQ001">
+        <text>Servicedesk / Helpdesk</text>
+      </subQuestion>
+      <subQuestion varName="IMA4_SQ002">
+        <text>Anwenderschulungen</text>
+      </subQuestion>
+      <response varName="IMA4">
+        <fixed>
+          <category>
+            <label>wird in unserer Einrichtung nicht durchgeführt</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>wird unregelmäßig durchgeführt (ad hoc)</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>wird regelmäßig, aber unterschiedlich durchgeführt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>wird als definierter Managementprozess regelmäßig durchgeführt</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Bitte beschreiben Sie den Reifegrad der folgenden IT-Managementprozesse bzw. Aufgaben in Ihrer Einrichtung:&lt;/p&gt;
+
+&lt;p&gt;IV. Evaluation&lt;/p&gt;</text>
+      <subQuestion varName="IMA5_SQ001">
+        <text>Erhebung der Anwenderzufriedenheit</text>
+      </subQuestion>
+      <subQuestion varName="IMA5_SQ002">
+        <text>Erhebung der technischen Performance</text>
+      </subQuestion>
+      <subQuestion varName="IMA5_SQ003">
+        <text>Erhebung &amp; Untersuchung von Effizienzvorteilen der IT (Wertbeitrag der IT zum Unternehmenserfolg)</text>
+      </subQuestion>
+      <response varName="IMA5">
+        <fixed>
+          <category>
+            <label>wird in unserer Einrichtung nicht durchgeführt</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>wird unregelmäßig durchgeführt (ad hoc)</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>wird regelmäßig, aber unterschiedlich durchgeführt</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>wird als definierter Managementprozess regelmäßig durchgeführt</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST16">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="162">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT-Management: Ablauforganisation II</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>&lt;p&gt;Wer initiiert neue IT-Projekte in Ihrer Einrichtung zumeist?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hinweis: Es müssen nicht alle Optionen in Reihenfolge gebracht werden. Sie können sich gern auch auf die wichtigsten ca. 2-5 fokussieren.&lt;/em&gt;&lt;/p&gt;</text>
+      <subQuestion varName="IMA6_A1">
+        <text>Ich als IT-Leiter</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A2">
+        <text>andere in der IT-Abteilung</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A3">
+        <text>die Krankenhausleitung</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A4">
+        <text>die ärztliche Direktion</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A5">
+        <text>die Pflegedirektion</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A6">
+        <text>der Krankenhausträger</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A7">
+        <text>andere verbundene Krankenhäuser</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A8">
+        <text>Chefärzte bzw. leitende Ärzte</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A9">
+        <text>Anwender aus den klinischen Bereichen</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A10">
+        <text>sonstige Anwender</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A11">
+        <text>Lieferanten</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A12">
+        <text>IT-Hersteller</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A13">
+        <text>Krankenkassen</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A14">
+        <text>Niedergelassene Ärzte</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A15">
+        <text>Wissenschaft, Forschung oder Beratung</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A16">
+        <text>Patienten</text>
+      </subQuestion>
+      <subQuestion varName="IMA6_A17">
+        <text>sonstige</text>
+      </subQuestion>
+      <response varName="IMA6">
+        <free>
+          <format>integer</format>
+          <length>2</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Welche Methoden zur Generierung von Ideen für neue IT-Projekte werden zumeist verwendet?</text>
+      <response varName="SQ001">
+        <fixed>
+          <category>
+            <label>Das betriebliche Vorschlagswesen oder ähnliche Mechanismen</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ002">
+        <fixed>
+          <category>
+            <label>Das gezielte Screening von Markttrends (z. B. über Konferenzen, Websites, Fachliteratur, Forschung)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ003">
+        <fixed>
+          <category>
+            <label>Benchmarks</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ004">
+        <fixed>
+          <category>
+            <label>Workshops (z. B. mit IT-Herstellern)</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="SQ005">
+        <fixed>
+          <category>
+            <label>ad hoc / auf Zuruf</label>
+            <value>1</value>
+          </category>
+        </fixed>
+      </response>
+      <response varName="IMA7T">
+        <fixed>
+          <category>
+            <label>sonstige, und zwar</label>
+            <value>1</value>
+            <contingentQuestion varName="IMA7other">
+              <text>sonstige, und zwar</text>
+              <length>24</length>
+            </contingentQuestion>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Wie viel Zeit vergeht üblicherweise zwischen der Idee und der Umsetzung von neuen IT-Projekten? (in Monaten und bezogen auf &quot;durchschnittlich&quot; aufwendige IT-Projekte)</text>
+      <response varName="IMA8">
+        <free>
+          <format>integer</format>
+          <length>10</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>Verfolgen Sie Bestrebungen zur Patientenpartizipaton bei der Entwicklung und/oder Nutzung von IT?</text>
+      <response varName="IMA9">
+        <fixed>
+          <category>
+            <label>Nein</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Eher nein</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Eher ja</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Ja</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>&lt;p&gt;Woran scheitern fehlgeschlagene IT-Projekte zumeist?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hinweis: Es müssen nicht alle Optionen in Reihenfolge gebracht werden. Sie können sich gern auch auf die wichtigsten ca. 2-5 fokussieren.&lt;/em&gt;&lt;/p&gt;</text>
+      <subQuestion varName="IMA10_A1">
+        <text>Mangelnde Finanzierung</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A2">
+        <text>Mangelnde Unterstützung des Managements</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A3">
+        <text>Widerstände der Anwender</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A4">
+        <text>Widerstände im Management</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A5">
+        <text>Mangelhafte Vorbereitung des Projektes</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A6">
+        <text>Datenschutz / rechtliches</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A7">
+        <text>Lösung wird in der Praxis nicht genutzt</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A8">
+        <text>Mangelnde Interoperabilität</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A9">
+        <text>Schlechte Nutzbarkeit der Lösung</text>
+      </subQuestion>
+      <subQuestion varName="IMA10_A10">
+        <text>Mangelnder Einbezug der Endanwender</text>
+      </subQuestion>
+      <response varName="IMA10">
+        <free>
+          <format>integer</format>
+          <length>2</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST17">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+  <section id="160">
+    <sectionInfo>
+      <position>title</position>
+      <text>IT-Organisationskultur</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <sectionInfo>
+      <position>before</position>
+      <text>&lt;p&gt;Im folgenden, letzten Abschnitt möchten wir Sie bitten, Ihre Zustimmung oder Ablehnung bezüglich einiger vorformulierter Aussagen zu geben, die die Organisationskultur Ihrer Einrichtung mit Bezug auf IT charakterisieren sollen.&lt;/p&gt;</text>
+      <administration>self</administration>
+    </sectionInfo>
+    <question>
+      <text>BItte bewerten Sie folgende Aussagen.</text>
+      <subQuestion varName="IMK1_SQ001">
+        <text>&quot;In der IT Abteilung haben wir kaum zeitliche Freiräume, um uns mit neuen IT-Projekten gezielt zu beschäftigen&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ002">
+        <text>&quot;Die Reaktionsfähigkeit unserer IT auf neue Anforderungen ist ausgezeichnet&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ003">
+        <text>&quot;Unser Krankenhaus ist agil und flexibel, wenn es um den Einsatz innovativer IT geht&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ004">
+        <text>&quot;Unser Krankenhaus ist auf allen Hierarchieebenen viel zu unbeweglich um IT-Lösungen sinnvoll einzubringen&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ005">
+        <text>&quot;In meiner Rolle als IT-Leiter kann ich Entscheidungen über Investitionen in neue IT-Lösungen weitgehend autonom treffen&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ006">
+        <text>&quot;Unser Krankenhaus zeigt eine hohe Risikobereitschaft mit Bezug auf IT-Projekte&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ007">
+        <text>&quot;In unserem Krankenhaus herrscht eine positive Fehlerkultur&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK1_SQ008">
+        <text>&quot;Wir versuchen jederzeit einer der ersten Anwender neu auf dem Markt befindlichen IT-Lösungen zu sein&quot;</text>
+      </subQuestion>
+      <response varName="IMK1">
+        <fixed>
+          <category>
+            <label>Stimme überhaupt nicht zu</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Stimme eher nicht zu</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Stimme eher zu</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Stimme voll zu</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>BItte bewerten Sie folgende Aussagen.</text>
+      <subQuestion varName="IMK2_SQ001">
+        <text>&quot;In unserer Einrichtung herrscht so etwas wie eine Zukunftsvision, der auch wir in der IT entgegenstreben&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ002">
+        <text>&quot;Kreativität der Mitarbeiter wird in unserem Krankenhaus groß geschrieben&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ003">
+        <text>&quot;Jeder in meinem Mitarbeiterteam braucht gewisse Freiheiten, um möglichst gute Lösungen erbringen zu können&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ004">
+        <text>&quot;Unsere IT-Abteilung leistet dann gute Arbeit, wenn jeder Mitarbeiter konstant gleichbleibende Aufgabengebiete abdeckt&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ005">
+        <text>&quot;Nach meiner Einschätzung stehen viel zu wenige Ressourcen für neue IT-Investitionen zur Verfügung&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ006">
+        <text>&quot;In unserem Krankenhaus werden neue IT Projekte auch schon mal aufgesetzt, ohne das sofort eine Kosten-Nutzen-Rechnung vorliegen muss&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ007">
+        <text>&quot;IT wird auf Ebene der Krankenhausleitung viel zu oft als reiner Kostenfaktor wahrgenommen&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK2_SQ008">
+        <text>&quot;Uns ist die Beteiligung der Endanwender in IT-Projekten besonders wichtig&quot;</text>
+      </subQuestion>
+      <response varName="IMK2">
+        <fixed>
+          <category>
+            <label>Stimme überhaupt nicht zu</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Stimme eher nicht zu</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Stimme eher zu</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Stimme voll zu</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>BItte bewerten Sie folgende Aussagen.</text>
+      <subQuestion varName="IMK3_SQ001">
+        <text>&quot;Mitarbeiter der IT können mit den klinischen Awendern auf Augenhöhe kommunizieren&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK3_SQ002">
+        <text>&quot;IT-Innovationen werden in unserem Krankenhaus offen diskutiert und kommuniziert&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK3_SQ003">
+        <text>&quot;Unseren Anwendern und Mitarbeitern haben häufig eine generelle Abneigung gegenüber IT&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK3_SQ004">
+        <text>&quot;Wir setzen schwerpunktmäßig auf bewährte IT-Lösungen&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK3_SQ005">
+        <text>&quot;Um in unserer Einrichtung optimal funktionieren zu können, müssen wir in der IT manchmal eigene Wege gehen&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK3_SQ006">
+        <text>&quot;Erfahrungsgemäß zieht die Zusammenarbeit mit Endanwendern unsere IT-Projekte oftmals unnötig in die Länge&quot;</text>
+      </subQuestion>
+      <subQuestion varName="IMK3_SQ007">
+        <text>&quot;IT-Projekte sind in unserer Einrichtung auch schon häufiger mal an datenschutzrechtlichen Bedenken gescheitert&quot;</text>
+      </subQuestion>
+      <response varName="IMK3">
+        <fixed>
+          <category>
+            <label>Stimme überhaupt nicht zu</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Stimme eher nicht zu</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Stimme eher zu</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Stimme voll zu</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Bitte gebene Sie eine Einschätzung darüber ein, ob Ihre Krakenhausleitung (kaufmännische Leitung, Pflegedirektion &amp; ärztliche Direktion) sich durch eine hohe Affinität zu IT-Innovationen und einen entsprechend großen Support bei neuen IT-Projekten auszeichnet oder nicht.</text>
+      <subQuestion varName="IMK4_A1">
+        <text>Kaufmännische Leitung /Geschäftsführung</text>
+      </subQuestion>
+      <subQuestion varName="IMK4_A2">
+        <text>Pflegedirektion</text>
+      </subQuestion>
+      <subQuestion varName="IMK4_A3">
+        <text>Ärztliche Direktion</text>
+      </subQuestion>
+      <response varName="IMK4">
+        <fixed>
+          <category>
+            <label>Stimme überhaupt nicht zu</label>
+            <value>A1</value>
+          </category>
+          <category>
+            <label>Stimme eher nicht zu</label>
+            <value>A2</value>
+          </category>
+          <category>
+            <label>Stimme eher zu</label>
+            <value>A3</value>
+          </category>
+          <category>
+            <label>Stimme voll zu</label>
+            <value>A4</value>
+          </category>
+        </fixed>
+      </response>
+    </question>
+    <question>
+      <text>Welche IT-Funktionen bergen Ihrer Meinung nach das größte Innovationspotential mit Blick auf klinische Prozesse?</text>
+      <response varName="IMK5">
+        <free>
+          <format>text</format>
+          <length>24</length>
+          <label />
+        </free>
+      </response>
+    </question>
+    <question>
+      <text>PRETEST KOMMENTAR</text>
+      <response varName="PRETEST18">
+        <free>
+          <format>longtext</format>
+          <length>40</length>
+          <label />
+        </free>
+      </response>
+    </question>
+  </section>
+</questionnaire>
