@@ -1,35 +1,44 @@
+# -*- coding: utf-8 -*-
+
 import xml.etree.ElementTree as ET
 import pymysql
 from collections import Counter
 import sqlite3
+from bs4 import BeautifulSoup
+import re
 
-path = 'C:/Users/ZeMIT_/Documents/R/IT-Report-2016/'
-xml_file_name = 'cio-survey-structure-pretest.xml'
-database_name = "cio-survey-structure-it-report-16.sqlite"
+# path = 'C:/Users/ZeMIT_/Documents/R/IT-Report-2016/'
+# xml_file_name = './pdl-survey-structure-pretest.xml'
+# database_name = './pdl-survey-structure-it-report-16.sqlite'
 
-dom = ET.parse(path + xml_file_name)
+xml_file_name = './cio-survey-structure-pretest.xml'
+database_name = './cio-survey-structure-it-report-16-backup-2.sqlite'
+
+dom = ET.parse(xml_file_name)
 root = dom.getroot()
 
-conn=sqlite3.connect(path + database_name)
+conn=sqlite3.connect(database_name)
 cur = conn.cursor()
 
+cur.execute('PRAGMA encoding = "UTF-8";')
+conn.commit()
 # Create table
 cur.execute('''CREATE TABLE section
              (id INTEGER PRIMARY KEY ASC, 
-              internal_id TEXT,
-              title TEXT)''')
+              section_internal_id TEXT charset utf8,
+              section_title TEXT charset utf8)''')
               
 cur.execute('''CREATE TABLE IF NOT EXISTS question
              (id INTEGER PRIMARY KEY ASC, 
-              internal_id TEXT,
-              section_id TEXT,
-              text TEXT,
-              type TEXT)''')
+              question_internal_id TEXT charset utf8,
+              section_id TEXT charset utf8,
+              question_text TEXT charset utf8,
+              question_type TEXT charset utf8''')
               
 cur.execute('''CREATE TABLE IF NOT EXISTS response
                 (id INTEGER PRIMARY KEY ASC,
-                 label TEXT,
-                 value TEXT)''')
+                 response_label TEXT charset utf8,
+                 response_value TEXT charset utf8)''')
                 
 cur.execute('''CREATE TABLE IF NOT EXISTS question_response
                 (question_id INT,
@@ -37,15 +46,15 @@ cur.execute('''CREATE TABLE IF NOT EXISTS question_response
 
 cur.execute('''CREATE TABLE IF NOT EXISTS subquestion
                 (id INTEGER PRIMARY KEY ASC,
-                 internal_id TEXT,
+                 subquestion_internal_id TEXT charset utf8,
                  section_id INT DEFAULT NULL,
                  question_id INT,
-                 text TEXT)''')
+                 subquestion_text TEXT charset utf8)''')
 
 cur.execute('''CREATE TABLE IF NOT EXISTS format
                 (id INTEGER PRIMARY KEY ASC,
-                 format TEXT DEFAULT NULL,
-                 length INT DEFAULT NULL)''')
+                 format_type TEXT DEFAULT NULL,
+                 format_length INT DEFAULT NULL)''')
                  
 cur.execute('''CREATE TABLE IF NOT EXISTS question_format
                 (question_id INTEGER,
@@ -54,26 +63,25 @@ cur.execute('''CREATE TABLE IF NOT EXISTS question_format
 conn.commit()
 conn.close()
 
-insert_section = '''INSERT INTO section (internal_id, title) 
+insert_section = '''INSERT INTO section (section_internal_id, section_title) 
                 VALUES (%s, '%s')'''
                 
-insert_question = '''INSERT INTO question (internal_id, section_id, text, type)
+insert_question = '''INSERT INTO question (question_internal_id, section_id, question_text, question_type)
                     VALUES ('%s', %s, '%s', '%s')'''
 
-insert_response = '''INSERT INTO response (label, value)
+insert_response = '''INSERT INTO response (response_label, response_value)
                     VALUES ("%s", "%s")'''
 
-insert_subquestion = '''INSERT INTO subquestion (internal_id, section_id, question_id, text)
+insert_subquestion = '''INSERT INTO subquestion (subquestion_internal_id, section_id, question_id, subquestion_text)
                     VALUES ("%s", "%s", "%s", "%s")'''
                     
-insert_format = '''INSERT INTO format (format, length)
+insert_format = '''INSERT INTO format (format_type, format_length)
                     VALUES ("%s", "%s")'''
                     
 insert_question_format = '''INSERT INTO question_format (question_id, format_id)
                     VALUES ("%s", "%s")'''
 
-
-conn=sqlite3.connect(path + database_name)
+conn = sqlite3.connect(database_name)
 cur = conn.cursor()
 for section in root.iterfind(".//section"):
     # section id
@@ -90,9 +98,19 @@ for section in root.iterfind(".//section"):
     # iter over questions
     for question in section.iterfind('.//question'):
         # get values from xml
-        question_internal_id = question.find('.//response').attrib['varName']
+        response = question.findall('.//response')
+        for r in response:
+            try: 
+                question_internal_id = r.attrib['varName']
+            except:
+                pass
         question_text = question.find('./text').text
+        question_text = question_text.encode(encoding='UTF-8',errors='strict')
+        question_text = re.sub('|', '', question_text)
+        question_text = BeautifulSoup(question_text, 'lxml').text
+        question_text = re.sub('<[^<]+?>', '', question_text)
         question_type = question.find('.//response/*[1]').tag
+
         # insert values into sql db
         # insert questions
         cur.execute("SELECT internal_id FROM question WHERE internal_id = '%s'" % question_internal_id)
@@ -106,6 +124,8 @@ for section in root.iterfind(".//section"):
         for subquestion in question.iterfind('.//subQuestion'):
             subquestion_internal_id = subquestion.attrib['varName']
             subquestion_text = subquestion.find('./text').text.replace('"', "'")
+            subquestion_text = BeautifulSoup(subquestion_text, 'lxml').text
+            subquestion_text = re.sub('<[^<]+?>', '', subquestion_text)
             # check if subquestion is already in database
             cur.execute("select internal_id from section where internal_id = '%s';" % subquestion_internal_id)
             internal_id = cur.fetchall()
@@ -142,11 +162,3 @@ for section in root.iterfind(".//section"):
 
 conn.commit()
 conn.close()
-
-
-
-
-
-
-
-
