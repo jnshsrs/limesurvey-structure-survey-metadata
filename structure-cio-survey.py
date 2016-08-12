@@ -14,6 +14,7 @@ import re
 xml_file_name = './cio-survey-structure-pretest.xml'
 database_name = './cio-survey-structure-it-report-16-backup-2.sqlite'
 
+
 dom = ET.parse(xml_file_name)
 root = dom.getroot()
 
@@ -33,7 +34,7 @@ cur.execute('''CREATE TABLE IF NOT EXISTS question
               question_internal_id TEXT charset utf8,
               section_id TEXT charset utf8,
               question_text TEXT charset utf8,
-              question_type TEXT charset utf8''')
+              question_type TEXT charset utf8)''')
               
 cur.execute('''CREATE TABLE IF NOT EXISTS response
                 (id INTEGER PRIMARY KEY ASC,
@@ -89,11 +90,11 @@ for section in root.iterfind(".//section"):
     # section title
     section_title = section.find("./sectionInfo/text").text
     # test if value is already in db
-    cur.execute("select internal_id from section where internal_id = %s;" % section_internal_id)
+    cur.execute("select section_internal_id from section where section_internal_id = %s;" % section_internal_id)
     qry_result_section = cur.fetchall()
     if not qry_result_section: 
         cur.execute(insert_section % (section_internal_id, section_title))
-    cur.execute("select id from section where internal_id = %s;" % section_internal_id)
+    cur.execute("select id from section where section_internal_id = %s;" % section_internal_id)
     section_id = cur.fetchall()[0][0]
     # iter over questions
     for question in section.iterfind('.//question'):
@@ -113,12 +114,12 @@ for section in root.iterfind(".//section"):
 
         # insert values into sql db
         # insert questions
-        cur.execute("SELECT internal_id FROM question WHERE internal_id = '%s'" % question_internal_id)
+        cur.execute("SELECT question_internal_id FROM question WHERE question_internal_id = '%s'" % question_internal_id)
         qry_result_question = cur.fetchall()
         if not qry_result_question:
             cur.execute(insert_question % (question_internal_id, section_id, question_text, question_type))
             conn.commit()
-        cur.execute("SELECT id FROM question WHERE internal_id = '%s'" % question_internal_id)
+        cur.execute("SELECT id FROM question WHERE question_internal_id = '%s'" % question_internal_id)
         question_id = cur.fetchall()[0][0]
         # subquestion
         for subquestion in question.iterfind('.//subQuestion'):
@@ -127,11 +128,11 @@ for section in root.iterfind(".//section"):
             subquestion_text = BeautifulSoup(subquestion_text, 'lxml').text
             subquestion_text = re.sub('<[^<]+?>', '', subquestion_text)
             # check if subquestion is already in database
-            cur.execute("select internal_id from section where internal_id = '%s';" % subquestion_internal_id)
+            cur.execute("select section_internal_id from section where section_internal_id = '%s';" % subquestion_internal_id)
             internal_id = cur.fetchall()
             if not internal_id: 
                 cur.execute(insert_subquestion % (subquestion_internal_id, section_id, question_id, subquestion_text))
-            cur.execute('''SELECT id FROM subquestion WHERE internal_id = "%s"''' % subquestion_internal_id)
+            cur.execute('''SELECT id FROM subquestion WHERE subquestion_internal_id = "%s"''' % subquestion_internal_id)
             subquestion_id = cur.fetchall()[0][0]
         # response table
         if question_type == 'fixed':
@@ -139,21 +140,21 @@ for section in root.iterfind(".//section"):
                 question_label = category.find('.//label').text
                 question_value = category.find('.//value').text
                 # insert response values
-                cur.execute('''SELECT id FROM response WHERE label = "%s" AND value = "%s";''' % (question_label, question_value))
+                cur.execute('''SELECT id FROM response WHERE response_label = "%s" AND response_value = "%s";''' % (question_label, question_value))
                 qry_result_response = cur.fetchall()
                 if not qry_result_response:
                     cur.execute(insert_response % (question_label, question_value))
-                cur.execute('''SELECT id FROM response WHERE  label = "%s" AND value = "%s";''' % (question_label, question_value))
+                cur.execute('''SELECT id FROM response WHERE  response_label = "%s" AND response_value = "%s";''' % (question_label, question_value))
                 response_id = cur.fetchall()[0][0]
                 cur.execute('''INSERT INTO question_response VALUES (%s, %s)''' % (question_id, response_id))
         elif question_type == "free":
                 format_format = question.find('.//response/free/format').text
                 format_length =  question.find('.//response/free/length').text
-                cur.execute('''SELECT id FROM format WHERE format = "%s" AND length = "%s";''' % (format_format, format_length))
+                cur.execute('''SELECT id FROM format WHERE format_type = "%s" AND format_length = "%s";''' % (format_format, format_length))
                 qry_result_format = cur.fetchall()
                 if not qry_result_format:
                     cur.execute(insert_format % (format_format, format_length))
-                cur.execute('''SELECT id FROM format WHERE format = "%s" AND length = "%s";''' % (format_format, format_length))
+                cur.execute('''SELECT id FROM format WHERE format_type = "%s" AND format_length = "%s";''' % (format_format, format_length))
                 format_id = cur.fetchall()[0][0]
                 cur.execute('''INSERT INTO question_format VALUES (%s, %s)''' % (question_id, format_id))
         else:
