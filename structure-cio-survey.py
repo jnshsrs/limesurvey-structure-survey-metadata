@@ -7,7 +7,6 @@ path = 'C:/Users/ZeMIT_/Documents/R/IT-Report-2016/'
 xml_file_name = 'cio-survey-structure-pretest.xml'
 database_name = "cio-survey-structure-it-report-16.sqlite"
 
-
 dom = ET.parse(path + xml_file_name)
 root = dom.getroot()
 
