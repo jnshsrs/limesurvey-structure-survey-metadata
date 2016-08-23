@@ -2,10 +2,10 @@
 # X: sting, column name containing bar labels (question text)
 # value: string, column name containing response values
 
-GGbars <- function(data, X, value, category = NULL, plot_color = "Greens", plot_title = NULL) {
+GGbars <- function(data, X, value, plot_color = "Greens", plot_title = NULL) {
     data <- data.frame(X = data[[X]], value = data[[value]])
     # Parameter für Plot-Function
-    
+
     data <- data %>%
         mutate(text_2 = X) %>%
         group_by(text_2) %>%
@@ -49,3 +49,57 @@ GGbars <- function(data, X, value, category = NULL, plot_color = "Greens", plot_
 }
 
 
+
+# data = dataframe containing it-functions of one group (e.g. documentation functions)
+# X = response label (implementation status)
+# value = "subquestion_text" - name of function
+
+rChart_implementation_bars <- function(data, X, value){
+    data <- data.frame(X = data[[X]], value = data[[value]])
+    
+    data <- data %>% 
+        group_by(X, value) %>% 
+        summarise(n = n()) %>% 
+        group_by(value) %>% 
+        mutate(abs = sum(n)) %>% 
+        mutate(freq = n / abs)
+    
+    n2 <- nPlot(freq ~ value, group = "X", data = data, type = "multiBarChart")
+        
+    data_2 <- data_2 %>% group_by(response_label, subquestion_text) %>% mutate(abs = sum(count))
+    data_2 %>% mutate(freq = count / abs) %>% filter(subquestion_text == "Pflegedokumentation")
+    n2$chart(color = c('darkgreen', 'green', 'seagreen', 'palegreen'))
+    n2$yAxis(tickFormat = "#! function(d) {
+                    //will change to .1% to show how to get one decimal
+                    return d3.format('.1%')(d)
+                    } !#")
+        
+        # n2$xAxis(height = 4000)
+    n2$set(width = 600, height = 500)
+    n2$chart(forceY = c(0, 1))
+    n2$xAxis(axisLabel = NULL, rotateLabels = -45)
+    # n2$set(title = "Gibt es in Ihrem Krankenhaus eine Funktion für...")
+    # n2$xAxis(staggerLabels = TRUE)
+        
+    # n2$templates$script <- "http://timelyportfolio.github.io/rCharts_nvd3_templates/chartWithTitle.html"
+    # prefix <- sub(pattern = "\\.{3}\\?", replacement = "", data_filtered$question_text[1])
+    # n <- percent_values %>% summarise(sum(n)) %>% as.character()
+    # n2$set(title = paste0(prefix, " ", data_filtered$subquestion_text[1], "? [n=", n, "]"))
+    n2$chart(margin = list(bottom = 250)) # , showValues = TRUE)
+    # n2$chart(valueFormat = "#! function(d) {
+    #          //will change to .1% to show how to get one decimal
+    #          return d3.format('.1%')(d)
+    #          } !#")
+    n2$chart(reduceXTicks = F)
+    return(n2)
+}
+
+source("./simulate-cio-data.R")
+# process data before given into function as argument
+data <- data %>% filter(question_internal_id == "KD1") %>% droplevels()
+
+# data = dataframe containing it-functions of one group (e.g. documentation functions)
+# X = response label (implementation status)
+# value = "subquestion_text" - name of function
+
+rChart_implementation_bars(data = data, X = "response_label", value = "subquestion_text")
